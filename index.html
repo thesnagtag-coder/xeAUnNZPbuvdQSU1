@@ -30,17 +30,17 @@
   --navy-100: #e3d6c0;
   --navy-50:  #f6f0e4;
 
-  --gold-950: #2a1509;
-  --gold-900: #401d10;
-  --gold-800: #5c2e1a;
-  --gold-700: #7a3d22;
-  --gold-600: #8f5030;
-  --gold-500: #b5673b;
-  --gold-400: #c67d52;
-  --gold-300: #d9a17a;
-  --gold-200: #e7c4a8;
-  --gold-100: #f2dfce;
-  --gold-50:  #fbf3ec;
+  --gold-950: #1e2818;
+  --gold-900: #283420;
+  --gold-800: #384a2c;
+  --gold-700: #4a5d3b;
+  --gold-600: #5f6f52;
+  --gold-500: #6e7f5e;
+  --gold-400: #8b9b7b;
+  --gold-300: #a5b494;
+  --gold-200: #c3cdb2;
+  --gold-100: #dde3d0;
+  --gold-50:  #eef1e6;
 
   --white: #ffffff;
   --off-white: #f9f8f5;
@@ -95,7 +95,7 @@
   --shadow-md: 0 4px 12px rgba(16,12,8,0.10), 0 2px 6px rgba(16,12,8,0.08);
   --shadow-lg: 0 10px 28px rgba(16,12,8,0.13), 0 4px 12px rgba(16,12,8,0.09);
   --shadow-xl: 0 20px 48px rgba(16,12,8,0.16), 0 8px 20px rgba(16,12,8,0.10);
-  --shadow-gold: 0 4px 20px rgba(181,103,59,0.25);
+  --shadow-gold: 0 4px 20px rgba(95,111,82,0.25);
   --shadow-navy: 0 8px 32px rgba(16,12,8,0.40);
 
   /* Transitions */
@@ -590,13 +590,13 @@ p { margin-bottom: 0; }
   top: 0;
   z-index: 200;
   height: var(--header-height);
-  background: var(--navy-900);
-  border-bottom: 2px solid rgba(181,103,59,0.25);
+  background: var(--navy-100);
+  border-bottom: 2px solid rgba(95,111,82,0.25);
   display: flex;
   align-items: center;
   padding: 0 var(--space-6);
   gap: var(--space-4);
-  box-shadow: 0 4px 20px rgba(16,12,8,0.35);
+  box-shadow: 0 4px 20px rgba(59,52,42,0.08);
 }
 
 .app-header-logo {
@@ -622,14 +622,14 @@ p { margin-bottom: 0; }
   font-family: var(--font-display);
   font-size: 1rem;
   font-weight: 600;
-  color: var(--white);
+  color: var(--navy-700);
   line-height: 1.1;
 }
 .app-header-title span {
   display: block;
   font-family: var(--font-body);
   font-size: 0.65rem;
-  color: var(--gold-400);
+  color: var(--gold-600);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-weight: 500;
@@ -654,26 +654,26 @@ p { margin-bottom: 0; }
   border-radius: var(--radius-md);
   font-size: 0.8rem;
   font-weight: 500;
-  color: var(--navy-100);
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--navy-600);
+  background: rgba(59,52,42,0.05);
+  border: 1px solid rgba(59,52,42,0.1);
   transition: all var(--transition-fast);
   white-space: nowrap;
 }
 
 .btn-header-action:hover {
-  background: rgba(255,255,255,0.12);
-  color: var(--white);
+  background: rgba(59,52,42,0.1);
+  color: var(--navy-800);
 }
 
 .btn-header-action.gold {
-  background: rgba(181,103,59,0.15);
-  border-color: rgba(181,103,59,0.3);
-  color: var(--gold-300);
+  background: rgba(95,111,82,0.14);
+  border-color: rgba(95,111,82,0.3);
+  color: var(--gold-700);
 }
 .btn-header-action.gold:hover {
-  background: rgba(181,103,59,0.25);
-  color: var(--gold-200);
+  background: rgba(95,111,82,0.22);
+  color: var(--gold-800);
 }
 
 .hamburger-btn {
@@ -682,9 +682,9 @@ p { margin-bottom: 0; }
   gap: 5px;
   padding: var(--space-2);
   border-radius: var(--radius-md);
-  color: var(--white);
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--navy-700);
+  background: rgba(59,52,42,0.05);
+  border: 1px solid rgba(59,52,42,0.1);
 }
 
 .hamburger-btn span {
@@ -706,8 +706,8 @@ p { margin-bottom: 0; }
 /* Sidebar */
 .app-sidebar {
   width: var(--sidebar-width);
-  background: var(--navy-900);
-  border-right: 1px solid rgba(255,255,255,0.06);
+  background: var(--navy-50);
+  border-right: 1px solid rgba(59,52,42,0.08);
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
@@ -719,7 +719,7 @@ p { margin-bottom: 0; }
 
 .sidebar-section {
   padding: var(--space-4) 0;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(59,52,42,0.06);
 }
 
 .sidebar-section:last-child { border-bottom: none; }
@@ -730,7 +730,7 @@ p { margin-bottom: 0; }
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--gold-500);
+  color: var(--gold-700);
   margin-bottom: var(--space-1);
 }
 
@@ -740,7 +740,7 @@ p { margin-bottom: 0; }
   gap: var(--space-3);
   padding: var(--space-2) var(--space-5);
   font-size: 0.85rem;
-  color: var(--navy-200);
+  color: var(--navy-600);
   transition: all var(--transition-fast);
   border-left: 3px solid transparent;
   cursor: pointer;
@@ -748,14 +748,14 @@ p { margin-bottom: 0; }
 }
 
 .sidebar-nav-item:hover {
-  background: rgba(255,255,255,0.05);
-  color: var(--white);
+  background: rgba(59,52,42,0.05);
+  color: var(--navy-900);
 }
 
 .sidebar-nav-item.active {
-  background: rgba(181,103,59,0.10);
-  color: var(--gold-300);
-  border-left-color: var(--gold-400);
+  background: rgba(95,111,82,0.12);
+  color: var(--gold-700);
+  border-left-color: var(--gold-600);
   font-weight: 600;
 }
 
@@ -785,7 +785,7 @@ p { margin-bottom: 0; }
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(16,12,8,0.7);
+  background: rgba(59,52,42,0.45);
   z-index: 150;
 }
 
@@ -793,11 +793,11 @@ p { margin-bottom: 0; }
    DASHBOARD
    ============================================================ */
 .dashboard-hero {
-  background: linear-gradient(135deg, var(--navy-800) 0%, var(--navy-700) 100%);
+  background: linear-gradient(135deg, var(--navy-100) 0%, var(--navy-50) 100%);
   border-radius: var(--radius-xl);
   padding: var(--space-8) var(--space-10);
   margin-bottom: var(--space-8);
-  border: 1px solid rgba(181,103,59,0.2);
+  border: 1px solid rgba(95,111,82,0.2);
   position: relative;
   overflow: hidden;
 }
@@ -809,7 +809,7 @@ p { margin-bottom: 0; }
   right: -10%;
   width: 300px;
   height: 300px;
-  background: radial-gradient(circle, rgba(181,103,59,0.08), transparent 70%);
+  background: radial-gradient(circle, rgba(95,111,82,0.1), transparent 70%);
   pointer-events: none;
 }
 
@@ -818,17 +818,17 @@ p { margin-bottom: 0; }
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--gold-400);
+  color: var(--gold-700);
   margin-bottom: var(--space-2);
 }
 
 .dashboard-hero h2 {
-  color: var(--white);
+  color: var(--navy-900);
   margin-bottom: var(--space-2);
 }
 
 .dashboard-hero p {
-  color: var(--navy-100);
+  color: var(--navy-600);
   font-size: 0.95rem;
 }
 
@@ -840,24 +840,24 @@ p { margin-bottom: 0; }
 }
 
 .dash-stat {
-  background: rgba(255,255,255,0.06);
+  background: rgba(59,52,42,0.05);
   border-radius: var(--radius-md);
   padding: var(--space-4);
   text-align: center;
-  border: 1px solid rgba(255,255,255,0.08);
+  border: 1px solid rgba(59,52,42,0.08);
 }
 
 .dash-stat-num {
   font-family: var(--font-display);
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--gold-300);
+  color: var(--gold-700);
   line-height: 1;
 }
 
 .dash-stat-label {
   font-size: 0.72rem;
-  color: var(--navy-200);
+  color: var(--navy-500);
   margin-top: var(--space-1);
 }
 
@@ -1436,7 +1436,7 @@ select.form-control {
 }
 
 .person-card-header {
-  background: linear-gradient(135deg, var(--navy-800), var(--navy-700));
+  background: linear-gradient(135deg, var(--navy-100), var(--navy-50));
   padding: var(--space-5) var(--space-6);
   display: flex;
   align-items: center;
@@ -1454,22 +1454,22 @@ select.form-control {
   font-family: var(--font-display);
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--navy-950);
+  color: var(--white);
   flex-shrink: 0;
-  box-shadow: 0 3px 12px rgba(181,103,59,0.4);
+  box-shadow: 0 3px 12px rgba(95,111,82,0.35);
 }
 
 .person-card-name {
   font-family: var(--font-display);
   font-size: 1.3rem;
   font-weight: 600;
-  color: var(--white);
+  color: var(--navy-900);
   margin-bottom: 2px;
 }
 
 .person-card-rel {
   font-size: 0.8rem;
-  color: var(--gold-300);
+  color: var(--gold-700);
   font-weight: 500;
 }
 
@@ -1486,8 +1486,8 @@ select.form-control {
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-md);
-  background: rgba(255,255,255,0.1);
-  color: var(--white);
+  background: rgba(59,52,42,0.08);
+  color: var(--navy-700);
   font-size: 0.85rem;
   cursor: pointer;
   border: none;
@@ -1495,7 +1495,7 @@ select.form-control {
 }
 
 .btn-person-action:hover {
-  background: rgba(255,255,255,0.2);
+  background: rgba(59,52,42,0.15);
 }
 
 .person-card-body {
@@ -1764,7 +1764,7 @@ select.form-control {
   body { background: white; color: black; font-size: 12pt; }
   .app-content { padding: 0; max-width: 100%; }
   .item-card { break-inside: avoid; border: 1px solid #ccc; }
-  .person-card-header { background: #1a2a4a !important; -webkit-print-color-adjust: exact; }
+  .person-card-header { background: #F3ECDF !important; -webkit-print-color-adjust: exact; }
 }
 
 /* ============================================================
@@ -1780,8 +1780,8 @@ select.form-control {
   position: fixed;
   bottom: 0; left: 0; right: 0;
   z-index: 9999;
-  background: rgba(28,22,16,0.97);
-  border-top: 1px solid rgba(198,125,82,0.25);
+  background: rgba(246,240,228,0.97);
+  border-top: 1px solid rgba(95,111,82,0.25);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1792,22 +1792,22 @@ select.form-control {
 }
 #app-watermark .wm-left {
   display: flex; align-items: center; gap: 10px;
-  font-size: 0.68rem; color: rgba(227,214,192,0.6);
+  font-size: 0.68rem; color: rgba(59,52,42,0.6);
   white-space: nowrap;
 }
 #app-watermark .wm-logo {
   font-family: 'Cormorant Garamond', serif;
   font-size: 0.82rem; font-weight: 700;
-  color: var(--gold2, #d9a17a);
+  color: var(--gold2, #5f6f52);
   white-space: nowrap;
 }
-#app-watermark .wm-sep { color: rgba(255,255,255,0.15); }
+#app-watermark .wm-sep { color: rgba(59,52,42,0.15); }
 #app-watermark .wm-license {
-  font-size: 0.67rem; color: rgba(227,214,192,0.5);
+  font-size: 0.67rem; color: rgba(59,52,42,0.55);
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 #app-watermark .wm-right {
-  font-size: 0.63rem; color: rgba(227,214,192,0.35);
+  font-size: 0.63rem; color: rgba(59,52,42,0.4);
   white-space: nowrap; text-align: right; flex-shrink: 0;
 }
 /* Watermark clearance handled on .app-main above */
@@ -1829,20 +1829,20 @@ select.form-control {
 <template id="doc-starthere">
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
-body{font-family:-apple-system,Inter,sans-serif;background:#f9f8f5;color:#33302c;line-height:1.7;padding:0;}
-.hero{background:#1c1610;color:#fff;padding:40px 24px;text-align:center;}
+body{font-family:-apple-system,Inter,sans-serif;background:#FBF8F2;color:#3B342A;line-height:1.7;padding:0;}
+.hero{background:#F3ECDF;color:#3B342A;padding:40px 24px;text-align:center;}
 .hero h1{font-size:1.7rem;margin-bottom:8px;}
-.hero p{color:#e3d6c0;font-size:1rem;}
+.hero p{color:#6E6353;font-size:1rem;}
 .wrap{max-width:600px;margin:0 auto;padding:28px 20px 60px;}
-.step{display:flex;gap:16px;align-items:flex-start;background:#fff;border:2px solid #e8e6e1;border-radius:14px;padding:20px;margin-bottom:16px;}
-.num{width:40px;height:40px;border-radius:50%;background:#1c1610;color:#fff;font-weight:700;font-size:1.1rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.step{display:flex;gap:16px;align-items:flex-start;background:#fff;border:2px solid #E7E0CC;border-radius:14px;padding:20px;margin-bottom:16px;}
+.num{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#8B9B7B,#5F6F52);color:#fff;font-weight:700;font-size:1.1rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
 .step strong{display:block;font-size:1.05rem;margin-bottom:4px;}
-.step span{font-size:.95rem;color:#6e6860;}
+.step span{font-size:.95rem;color:#6E6353;}
 .warn{background:#fff8e6;border:2px solid #c47f00;border-radius:12px;padding:18px 20px;margin:20px 0;font-size:.95rem;color:#5c2e1a;}
 .warn strong{color:#c47f00;}
-.file-list{background:#fbf3ec;border:2px solid #c67d52;border-radius:12px;padding:18px 20px;margin:20px 0;}
-.file-list strong{display:block;margin-bottom:10px;color:#7a3d22;}
-.file-list div{font-family:monospace;font-size:.92rem;padding:4px 0;color:#33302c;}
+.file-list{background:#EEF1E6;border:2px solid #8B9B7B;border-radius:12px;padding:18px 20px;margin:20px 0;}
+.file-list strong{display:block;margin-bottom:10px;color:#4A5D3B;}
+.file-list div{font-family:monospace;font-size:.92rem;padding:4px 0;color:#3B342A;}
 </style>
 <div class="hero">
   <h1>👋 Welcome! Start Here First</h1>
@@ -1867,7 +1867,7 @@ body{font-family:-apple-system,Inter,sans-serif;background:#f9f8f5;color:#33302c
 
   <div class="step">
     <div class="num">3</div>
-    <div><strong>Tap it once</strong><span>It will open in Safari (or Chrome). Then tap the gold "Get Instant Access" button. That's it!</span></div>
+    <div><strong>Tap it once</strong><span>It will open in Safari (or Chrome). Then tap the green "Get Instant Access" button. That's it!</span></div>
   </div>
 
   <div class="file-list">
@@ -1888,8 +1888,8 @@ body{font-family:-apple-system,Inter,sans-serif;background:#f9f8f5;color:#33302c
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 :root{
   --navy:#1c1610;--navy2:#3b342a;--navy3:#55493a;
-  --gold:#c67d52;--gold2:#d9a17a;--gold4:#fbf3ec;
-  --white:#fff;--off:#f9f8f5;--g50:#f6f5f2;--g100:#f3f2ef;--g200:#e8e6e1;
+  --gold:#5f6f52;--gold2:#4a5d3b;--gold4:#eef1e6;
+  --white:#fff;--off:#FBF8F2;--g50:#f6f5f2;--g100:#f3f2ef;--g200:#e8e6e1;
   --g400:#b8b3aa;--g500:#908a80;--g600:#6e6860;--g700:#4e4a44;--g800:#33302c;
   --success:#1a7a4a;--s2:#e8f7ef;
   --danger:#b52b2b;--d2:#fdf0f0;
@@ -1902,10 +1902,10 @@ html{scroll-behavior:smooth;}
 body{font-family:var(--fb);background:var(--off);color:var(--g800);font-size:19px;line-height:1.7;}
 
 /* HEADER */
-.page-header{background:var(--navy);color:#fff;padding:40px 28px 34px;text-align:center;}
-.ph-eyebrow{font-size:.85rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold2);margin-bottom:10px;}
+.page-header{background:#F3ECDF;color:#3B342A;padding:40px 28px 34px;text-align:center;}
+.ph-eyebrow{font-size:.85rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#5F6F52;margin-bottom:10px;}
 .ph-title{font-family:var(--fd);font-size:clamp(1.8rem,6vw,2.6rem);font-weight:700;line-height:1.2;}
-.ph-sub{font-size:1.05rem;color:#e3d6c0;margin-top:10px;max-width:480px;margin-left:auto;margin-right:auto;}
+.ph-sub{font-size:1.05rem;color:#6E6353;margin-top:10px;max-width:480px;margin-left:auto;margin-right:auto;}
 
 /* WRAP - single column, generous spacing */
 .chwrap{max-width:680px;margin:0 auto;padding:28px 20px 70px;}
@@ -1921,7 +1921,7 @@ body{font-family:var(--fb);background:var(--off);color:var(--g800);font-size:19p
 /* BIG NUMBERED STEPS */
 .big-steps{display:flex;flex-direction:column;gap:18px;}
 .big-step{display:flex;gap:16px;align-items:flex-start;}
-.big-step-num{width:42px;height:42px;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;font-size:1.2rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.big-step-num{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#8B9B7B,#5F6F52);color:#fff;font-weight:700;font-size:1.2rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
 .big-step-text{padding-top:6px;}
 .big-step-text strong{display:block;font-size:1.05rem;color:var(--g800);margin-bottom:3px;}
 .big-step-text span{font-size:.95rem;color:var(--g600);}
@@ -1959,9 +1959,9 @@ body{font-family:var(--fb);background:var(--off);color:var(--g800);font-size:19p
 .key-desc{font-size:.96rem;color:var(--g700);}
 
 /* PRINT HINT */
-.print-hint{text-align:center;background:var(--gold4);border:2px dashed var(--gold);border-radius:12px;padding:16px;margin-bottom:24px;font-size:.95rem;color:#7a3d22;}
+.print-hint{text-align:center;background:var(--gold4);border:2px dashed var(--gold);border-radius:12px;padding:16px;margin-bottom:24px;font-size:.95rem;color:#384a2c;}
 
-.chfooter{background:var(--navy);color:#a38970;text-align:center;padding:30px 24px;font-size:.9rem;line-height:1.7;}
+.chfooter{background:#F3ECDF;color:#6E6353;text-align:center;padding:30px 24px;font-size:.9rem;line-height:1.7;}
 .chfooter strong{color:var(--gold);}
 
 @media(max-width:480px){
@@ -2005,7 +2005,7 @@ body{font-family:var(--fb);background:var(--off);color:var(--g800);font-size:19p
       </div>
       <div class="big-step">
         <div class="big-step-num">4</div>
-        <div class="big-step-text"><strong>Click the gold button</strong><span>It says "Get Instant Access." Click it once, and you're in.</span></div>
+        <div class="big-step-text"><strong>Click the green button</strong><span>It says "Get Instant Access." Click it once, and you're in.</span></div>
       </div>
     </div>
   </div>
@@ -2121,7 +2121,7 @@ body{font-family:var(--fb);background:var(--off);color:var(--g800);font-size:19p
   </div>
   <div class="sheet-body">
     <ul class="simple-list">
-      <li><strong>To add something new:</strong> Click the gold button that says "+ Add" - fill in the boxes - click Save</li>
+      <li><strong>To add something new:</strong> Click the green button that says "+ Add" - fill in the boxes - click Save</li>
       <li><strong>To change something:</strong> Find it on the screen, click the pencil ✏️ icon, make your changes, click Save</li>
       <li><strong>To remove something:</strong> Click the trash 🗑️ icon, then confirm you want to delete it</li>
       <li><strong>To see a hidden password:</strong> Tap or hover your mouse over the blurry text</li>
@@ -2223,8 +2223,8 @@ body{font-family:var(--fb);background:var(--off);color:var(--g800);font-size:19p
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 :root{
   --mnavy:#1c1610;--mnavy2:#3b342a;--mnavy3:#55493a;
-  --mgold:#c67d52;--mgold2:#d9a17a;--mgold3:#f2dfce;--mgold4:#fbf3ec;
-  --mwhite:#fff;--moff:#f9f8f5;--mgray50:#f6f5f2;--mgray100:#f3f2ef;
+  --mgold:#5f6f52;--mgold2:#4a5d3b;--mgold3:#c3cdb2;--mgold4:#eef1e6;
+  --mwhite:#fff;--moff:#FBF8F2;--mgray50:#f6f5f2;--mgray100:#f3f2ef;
   --mgray200:#e8e6e1;--mgray400:#b8b3aa;--mgray500:#908a80;--mgray600:#6e6860;
   --mgray700:#4e4a44;--mgray800:#33302c;
   --msuccess:#1a7a4a;--msuccess2:#e8f7ef;
@@ -2242,14 +2242,14 @@ a{color:var(--mnavy2);text-decoration:none;}
 a:hover{text-decoration:underline;}
 
 /* COVER */
-.cover{background:linear-gradient(160deg,var(--mnavy) 0%,var(--mnavy3) 100%);color:#fff;padding:72px 32px 56px;text-align:center;position:relative;overflow:hidden;}
-.cover::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(110,99,83,.4),transparent);pointer-events:none;}
-.cover-badge{position:relative;display:inline-flex;align-items:center;gap:8px;padding:6px 18px;background:rgba(198,125,82,.15);border:1px solid rgba(198,125,82,.35);border-radius:999px;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mgold2);margin-bottom:18px;}
+.cover{background:linear-gradient(160deg,#F6F0E4 0%,#EFE6D3 100%);color:var(--mnavy2);padding:72px 32px 56px;text-align:center;position:relative;overflow:hidden;}
+.cover::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(124,139,111,.18),transparent);pointer-events:none;}
+.cover-badge{position:relative;display:inline-flex;align-items:center;gap:8px;padding:6px 18px;background:rgba(95,111,82,.14);border:1px solid rgba(95,111,82,.35);border-radius:999px;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mgold2);margin-bottom:18px;}
 .cover h1{font-family:var(--mfd);font-size:clamp(2rem,5vw,3rem);font-weight:700;line-height:1.15;margin-bottom:10px;position:relative;}
 .cover h1 em{font-style:italic;color:var(--mgold2);}
-.cover-sub{font-size:.98rem;color:#e3d6c0;max-width:540px;margin:0 auto 24px;position:relative;}
+.cover-sub{font-size:.98rem;color:var(--mgray700);max-width:540px;margin:0 auto 24px;position:relative;}
 .cover-meta{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;position:relative;}
-.cover-pill{font-size:.78rem;color:#c6b49c;display:flex;align-items:center;gap:6px;}
+.cover-pill{font-size:.78rem;color:var(--mgray600);display:flex;align-items:center;gap:6px;}
 
 /* LAYOUT */
 .mwrap{max-width:860px;margin:0 auto;padding:40px 24px 80px;}
@@ -2267,21 +2267,21 @@ a:hover{text-decoration:underline;}
 /* EXPAND CONTROLS */
 .exp-row{display:flex;gap:10px;margin-bottom:18px;}
 .exp-btn{padding:7px 16px;border-radius:7px;font-size:.79rem;font-weight:700;cursor:pointer;border:1px solid var(--mgray200);background:var(--mwhite);color:var(--mnavy);transition:.2s;}
-.exp-btn:hover{background:var(--mnavy);color:#fff;border-color:var(--mnavy);}
-.exp-btn.gold{background:linear-gradient(135deg,var(--mgold2),var(--mgold));color:var(--mnavy);border:none;box-shadow:0 2px 10px rgba(198,125,82,.3);}
+.exp-btn:hover{background:var(--mgold);color:#fff;border-color:var(--mgold);}
+.exp-btn.gold{background:linear-gradient(135deg,#8B9B7B,#5F6F52);color:#fff;border:none;box-shadow:0 2px 10px rgba(95,111,82,.3);}
 
 /* COLLAPSIBLE SECTION */
 .sec{margin-bottom:10px;border:1px solid var(--mgray200);border-radius:12px;overflow:hidden;box-shadow:var(--msh);}
 .sec-trigger{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 24px;cursor:pointer;user-select:none;background:var(--mwhite);transition:background .2s;}
 .sec-trigger:hover{background:var(--mgray100);}
-.sec-trigger.open{background:var(--mnavy);}
+.sec-trigger.open{background:var(--mgold4);}
 .sec-trigger-left{display:flex;align-items:center;gap:14px;}
 .sec-badge{width:32px;height:32px;border-radius:50%;background:var(--mgold3);color:var(--mnavy);font-size:.78rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:.2s;}
-.sec-trigger.open .sec-badge{background:rgba(198,125,82,.2);color:var(--mgold2);}
+.sec-trigger.open .sec-badge{background:var(--mgold);color:#fff;}
 .sec-title{font-family:var(--mfd);font-size:1.08rem;font-weight:600;color:var(--mnavy);line-height:1.2;}
-.sec-trigger.open .sec-title{color:#fff;}
+.sec-trigger.open .sec-title{color:var(--mgold2);}
 .sec-sub{font-size:.76rem;color:var(--mgray500);margin-top:2px;}
-.sec-trigger.open .sec-sub{color:#c6b49c;}
+.sec-trigger.open .sec-sub{color:var(--mgray600);}
 .sec-arrow{font-size:.72rem;color:var(--mgray400);transition:transform .3s;flex-shrink:0;}
 .sec-trigger.open .sec-arrow{transform:rotate(180deg);color:var(--mgold2);}
 .sec-body{display:none;padding:24px 28px;background:var(--mwhite);border-top:1px solid var(--mgray200);}
@@ -2300,21 +2300,21 @@ a:hover{text-decoration:underline;}
 
 .tip{background:var(--minfo2);border-left:4px solid var(--minfo);border-radius:0 8px 8px 0;padding:13px 16px;margin:14px 0;font-size:.88rem;color:#2b2116;}
 .tip strong{color:var(--minfo);}
-.note{background:var(--mgold4);border-left:4px solid var(--mgold);border-radius:0 8px 8px 0;padding:13px 16px;margin:14px 0;font-size:.88rem;color:#5c2e1a;}
-.note strong{color:#7a3d22;}
+.note{background:var(--mgold4);border-left:4px solid var(--mgold);border-radius:0 8px 8px 0;padding:13px 16px;margin:14px 0;font-size:.88rem;color:#384a2c;}
+.note strong{color:#2c3a24;}
 .warn{background:var(--mdanger2);border-left:4px solid var(--mdanger);border-radius:0 8px 8px 0;padding:13px 16px;margin:14px 0;font-size:.88rem;color:#5a1a1a;}
 .warn strong{color:var(--mdanger);}
 
 /* STEPS */
 .steps{display:flex;flex-direction:column;gap:14px;margin:14px 0;}
 .step{display:flex;gap:14px;align-items:flex-start;}
-.step-n{width:30px;height:30px;border-radius:50%;background:var(--mnavy);color:#fff;font-weight:700;font-size:.82rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
+.step-n{width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#8B9B7B,#5F6F52);color:#fff;font-weight:700;font-size:.82rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
 .step-title{font-weight:700;color:var(--mnavy);font-size:.9rem;margin-bottom:3px;}
 .step-desc{font-size:.84rem;color:var(--mgray600);}
 
 /* TABLE */
 .mtable{width:100%;border-collapse:collapse;margin:14px 0;font-size:.85rem;}
-.mtable th{background:var(--mnavy);color:#fff;padding:9px 14px;text-align:left;font-weight:600;}
+.mtable th{background:var(--mgold);color:#fff;padding:9px 14px;text-align:left;font-weight:600;}
 .mtable td{padding:9px 14px;border-bottom:1px solid var(--mgray200);}
 .mtable tr:nth-child(even) td{background:var(--mgray100);}
 
@@ -2326,7 +2326,7 @@ a:hover{text-decoration:underline;}
 .mod-desc{font-size:.78rem;color:var(--mgray600);line-height:1.45;}
 
 /* FOOTER */
-.mfooter{background:var(--mnavy);color:#a38970;text-align:center;padding:28px;font-size:.8rem;}
+.mfooter{background:#F3ECDF;color:var(--mgray600);text-align:center;padding:28px;font-size:.8rem;}
 .mfooter strong{color:var(--mgold);}
 
 /* ── VISUAL DIAGRAM BLOCKS ── */
@@ -2335,7 +2335,7 @@ a:hover{text-decoration:underline;}
 .diagram-title{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mgold);margin-bottom:10px;text-align:center;}
 .big-step-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:14px 0;}
 .big-step{background:var(--mgray50);border:1px solid var(--mgray200);border-radius:10px;padding:14px;text-align:center;}
-.big-step-num{width:36px;height:36px;border-radius:50%;background:var(--mnavy);color:#fff;font-weight:700;font-size:1rem;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;}
+.big-step-num{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#8B9B7B,#5F6F52);color:#fff;font-weight:700;font-size:1rem;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;}
 .big-step svg{width:100%;height:auto;max-height:120px;margin-bottom:8px;}
 .big-step-label{font-size:.82rem;font-weight:700;color:var(--mnavy);margin-bottom:3px;}
 .big-step-desc{font-size:.76rem;color:var(--mgray600);}
@@ -2357,10 +2357,10 @@ a:hover{text-decoration:underline;}
 .save-loc-card.recommended{border-color:var(--mgold);background:var(--mgold4);}
 .save-loc-icon{font-size:1.6rem;margin-bottom:8px;}
 .save-loc-title{font-weight:700;font-size:.88rem;color:var(--mnavy);margin-bottom:4px;}
-.save-loc-best{display:inline-block;font-size:.62rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--mgold);color:var(--mnavy);padding:2px 8px;border-radius:999px;margin-bottom:6px;}
+.save-loc-best{display:inline-block;font-size:.62rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--mgold);color:#fff;padding:2px 8px;border-radius:999px;margin-bottom:6px;}
 .save-loc-desc{font-size:.78rem;color:var(--mgray600);line-height:1.5;}
 
-.tip-box{background:var(--mgold4);border:1px dashed var(--mgold);border-radius:10px;padding:14px 16px;margin:14px 0;font-size:.88rem;color:#5c2e1a;}
+.tip-box{background:var(--mgold4);border:1px dashed var(--mgold);border-radius:10px;padding:14px 16px;margin:14px 0;font-size:.88rem;color:#384a2c;}
 
 @media(max-width:600px){
   .mwrap{padding:20px 14px 60px;}
@@ -2480,28 +2480,28 @@ a:hover{text-decoration:underline;}
         <g transform="translate(40,20)">
           <rect x="0" y="0" width="80" height="100" rx="6" fill="#ffffff" stroke="#e3d6c0" stroke-width="2"/>
           <path d="M0,0 L80,0 L80,100 L0,100 Z" fill="none"/>
-          <rect x="10" y="14" width="60" height="6" rx="2" fill="#d9a17a"/>
+          <rect x="10" y="14" width="60" height="6" rx="2" fill="#8B9B7B"/>
           <rect x="10" y="28" width="60" height="6" rx="2" fill="#e3d6c0"/>
           <rect x="10" y="42" width="40" height="6" rx="2" fill="#e3d6c0"/>
           <circle cx="40" cy="72" r="14" fill="#1c1610"/>
-          <text x="40" y="77" font-size="13" fill="#c67d52" text-anchor="middle" font-weight="700">🏛</text>
+          <text x="40" y="77" font-size="13" fill="#5F6F52" text-anchor="middle" font-weight="700">🏛</text>
         </g>
         <text x="80" y="135" font-size="13" fill="#4e4a44" text-anchor="middle" font-family="Inter,sans-serif">index.html</text>
         <!-- Arrow -->
-        <path d="M150,60 L220,60" stroke="#c67d52" stroke-width="3" marker-end="url(#arrow1)"/>
-        <defs><marker id="arrow1" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#c67d52"/></marker></defs>
+        <path d="M150,60 L220,60" stroke="#5F6F52" stroke-width="3" marker-end="url(#arrow1)"/>
+        <defs><marker id="arrow1" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5F6F52"/></marker></defs>
         <!-- Browser icon -->
         <g transform="translate(250,15)">
           <rect x="0" y="0" width="110" height="80" rx="8" fill="#1c1610"/>
           <circle cx="20" cy="16" r="4" fill="#e60023"/>
-          <circle cx="34" cy="16" r="4" fill="#d9a17a"/>
+          <circle cx="34" cy="16" r="4" fill="#8B9B7B"/>
           <circle cx="48" cy="16" r="4" fill="#1a7a4a"/>
           <rect x="10" y="30" width="90" height="40" rx="4" fill="#ffffff"/>
           <text x="55" y="54" font-size="11" fill="#1c1610" text-anchor="middle" font-weight="700">🏛️</text>
         </g>
         <text x="305" y="135" font-size="13" fill="#4e4a44" text-anchor="middle" font-family="Inter,sans-serif">Opens in your browser</text>
         <!-- Result -->
-        <path d="M380,60 L430,60" stroke="#c67d52" stroke-width="3" marker-end="url(#arrow1)"/>
+        <path d="M380,60 L430,60" stroke="#5F6F52" stroke-width="3" marker-end="url(#arrow1)"/>
         <g transform="translate(450,15)">
           <rect x="0" y="0" width="110" height="80" rx="8" fill="#1a7a4a"/>
           <text x="55" y="48" font-size="30" text-anchor="middle">✓</text>
@@ -2548,27 +2548,27 @@ a:hover{text-decoration:underline;}
     <h3 style="margin-top:24px;">Step-by-Step: Opening on a Windows Computer</h3>
     <div class="big-step-grid">
       <div class="big-step">
-        <svg viewBox="0 0 100 100"><rect x="10" y="20" width="80" height="60" rx="4" fill="#fff" stroke="#1c1610" stroke-width="2"/><rect x="18" y="28" width="64" height="4" fill="#e8e6e1"/><rect x="18" y="36" width="64" height="4" fill="#e8e6e1"/><rect x="18" y="44" width="50" height="4" fill="#c67d52"/><circle cx="50" cy="64" r="8" fill="#1c1610"/></svg>
+        <svg viewBox="0 0 100 100"><rect x="10" y="20" width="80" height="60" rx="4" fill="#fff" stroke="#1c1610" stroke-width="2"/><rect x="18" y="28" width="64" height="4" fill="#e8e6e1"/><rect x="18" y="36" width="64" height="4" fill="#e8e6e1"/><rect x="18" y="44" width="50" height="4" fill="#5F6F52"/><circle cx="50" cy="64" r="8" fill="#1c1610"/></svg>
         <div class="big-step-num">1</div>
         <div class="big-step-label">Find the file</div>
         <div class="big-step-desc">In your Downloads folder, or wherever you saved it</div>
       </div>
       <div class="big-step">
-        <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="38" fill="none" stroke="#1c1610" stroke-width="2"/><circle cx="50" cy="50" r="6" fill="#c67d52"/><text x="50" y="20" font-size="10" text-anchor="middle" fill="#1c1610">click</text><text x="50" y="90" font-size="10" text-anchor="middle" fill="#1c1610">click</text></svg>
+        <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="38" fill="none" stroke="#1c1610" stroke-width="2"/><circle cx="50" cy="50" r="6" fill="#5F6F52"/><text x="50" y="20" font-size="10" text-anchor="middle" fill="#1c1610">click</text><text x="50" y="90" font-size="10" text-anchor="middle" fill="#1c1610">click</text></svg>
         <div class="big-step-num">2</div>
         <div class="big-step-label">Double-click it</div>
         <div class="big-step-desc">Click the mouse button twice, quickly, on the file</div>
       </div>
       <div class="big-step">
-        <svg viewBox="0 0 100 100"><rect x="5" y="10" width="90" height="65" rx="6" fill="#1c1610"/><circle cx="18" cy="20" r="3" fill="#e60023"/><circle cx="28" cy="20" r="3" fill="#d9a17a"/><circle cx="38" cy="20" r="3" fill="#1a7a4a"/><rect x="10" y="30" width="80" height="38" fill="#fff"/><text x="50" y="53" font-size="18" text-anchor="middle">🏛️</text></svg>
+        <svg viewBox="0 0 100 100"><rect x="5" y="10" width="90" height="65" rx="6" fill="#1c1610"/><circle cx="18" cy="20" r="3" fill="#e60023"/><circle cx="28" cy="20" r="3" fill="#8B9B7B"/><circle cx="38" cy="20" r="3" fill="#1a7a4a"/><rect x="10" y="30" width="80" height="38" fill="#fff"/><text x="50" y="53" font-size="18" text-anchor="middle">🏛️</text></svg>
         <div class="big-step-num">3</div>
         <div class="big-step-label">Browser opens</div>
         <div class="big-step-desc">Your screen shows the welcome page automatically</div>
       </div>
       <div class="big-step">
-        <svg viewBox="0 0 100 100"><rect x="15" y="35" width="70" height="28" rx="14" fill="#c67d52"/><text x="50" y="53" font-size="9" text-anchor="middle" fill="#1c1610" font-weight="700">Get Access</text></svg>
+        <svg viewBox="0 0 100 100"><rect x="15" y="35" width="70" height="28" rx="14" fill="#5F6F52"/><text x="50" y="53" font-size="9" text-anchor="middle" fill="#fff" font-weight="700">Get Access</text></svg>
         <div class="big-step-num">4</div>
-        <div class="big-step-label">Click gold button</div>
+        <div class="big-step-label">Click green button</div>
         <div class="big-step-desc">Click "Get Instant Access" - your Dashboard appears</div>
       </div>
     </div>
@@ -2593,7 +2593,7 @@ a:hover{text-decoration:underline;}
       <div class="step"><div class="step-n">1</div><div><div class="step-title">Find the file</div><div class="step-desc">Open the "Files" or "My Files" app on your phone - look in the Download folder</div></div></div>
       <div class="step"><div class="step-n">2</div><div><div class="step-title">Tap the file once</div><div class="step-desc">Tap directly on <code>index.html</code></div></div></div>
       <div class="step"><div class="step-n">3</div><div><div class="step-title">Choose a browser</div><div class="step-desc">Your phone may ask "Open with?" - choose Chrome or Firefox</div></div></div>
-      <div class="step"><div class="step-n">4</div><div><div class="step-title">Tap "Get Instant Access"</div><div class="step-desc">The gold button on the welcome screen</div></div></div>
+      <div class="step"><div class="step-n">4</div><div><div class="step-title">Tap "Get Instant Access"</div><div class="step-desc">The green button on the welcome screen</div></div></div>
     </div>
 
     <h3>Step-by-Step: Opening on an iPhone or iPad</h3>
@@ -2726,7 +2726,7 @@ a:hover{text-decoration:underline;}
     <h3>Adding a Record</h3>
     <div class="steps">
       <div class="step"><div class="step-n">1</div><div><div class="step-title">Go to the module</div><div class="step-desc">Click the module in the sidebar or click its card on the Dashboard.</div></div></div>
-      <div class="step"><div class="step-n">2</div><div><div class="step-title">Click the gold "+ Add" button</div><div class="step-desc">It's in the top-right corner of every module (e.g., "+ Add Person", "+ Add Policy", "+ Write Letter").</div></div></div>
+      <div class="step"><div class="step-n">2</div><div><div class="step-title">Click the green "+ Add" button</div><div class="step-desc">It's in the top-right corner of every module (e.g., "+ Add Person", "+ Add Policy", "+ Write Letter").</div></div></div>
       <div class="step"><div class="step-n">3</div><div><div class="step-title">Fill in the form</div><div class="step-desc">A panel slides up. Complete the fields. Required fields are marked with a red asterisk (*). All other fields are optional.</div></div></div>
       <div class="step"><div class="step-n">4</div><div><div class="step-title">Click Save</div><div class="step-desc">The record appears in the list immediately. Data is automatically saved to your browser's storage.</div></div></div>
     </div>
@@ -2761,14 +2761,14 @@ a:hover{text-decoration:underline;}
       <svg viewBox="0 0 620 160" xmlns="http://www.w3.org/2000/svg">
         <!-- App box -->
         <g transform="translate(20,30)">
-          <rect x="0" y="0" width="130" height="90" rx="8" fill="#1c1610"/>
-          <text x="65" y="35" font-size="11" fill="#d9a17a" text-anchor="middle" font-weight="700">Your Typed</text>
-          <text x="65" y="50" font-size="11" fill="#d9a17a" text-anchor="middle" font-weight="700">Information</text>
-          <rect x="20" y="60" width="90" height="18" rx="9" fill="#c67d52"/>
-          <text x="65" y="73" font-size="9" fill="#1c1610" text-anchor="middle" font-weight="700">💾 Backup</text>
+          <rect x="0" y="0" width="130" height="90" rx="8" fill="#F3ECDF" stroke="#E7E0CC" stroke-width="2"/>
+          <text x="65" y="35" font-size="11" fill="#3B342A" text-anchor="middle" font-weight="700">Your Typed</text>
+          <text x="65" y="50" font-size="11" fill="#3B342A" text-anchor="middle" font-weight="700">Information</text>
+          <rect x="20" y="60" width="90" height="18" rx="9" fill="#5F6F52"/>
+          <text x="65" y="73" font-size="9" fill="#fff" text-anchor="middle" font-weight="700">💾 Backup</text>
         </g>
-        <path d="M160,75 L210,75" stroke="#c67d52" stroke-width="3" marker-end="url(#arrow2)"/>
-        <defs><marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#c67d52"/></marker></defs>
+        <path d="M160,75 L210,75" stroke="#5F6F52" stroke-width="3" marker-end="url(#arrow2)"/>
+        <defs><marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5F6F52"/></marker></defs>
         <!-- File created -->
         <g transform="translate(225,25)">
           <rect x="0" y="0" width="70" height="90" rx="6" fill="#fff" stroke="#1a7a4a" stroke-width="2.5"/>
@@ -2778,15 +2778,15 @@ a:hover{text-decoration:underline;}
           <text x="35" y="65" font-size="20" text-anchor="middle">📄</text>
         </g>
         <text x="260" y="135" font-size="11" fill="#4e4a44" text-anchor="middle" font-family="Inter,sans-serif">A real file is created</text>
-        <path d="M310,75 L360,75" stroke="#c67d52" stroke-width="3" marker-end="url(#arrow2)"/>
+        <path d="M310,75 L360,75" stroke="#5F6F52" stroke-width="3" marker-end="url(#arrow2)"/>
         <!-- You save it -->
         <g transform="translate(375,25)">
-          <rect x="0" y="0" width="90" height="90" rx="8" fill="#fbf3ec" stroke="#c67d52" stroke-width="2"/>
+          <rect x="0" y="0" width="90" height="90" rx="8" fill="#EEF1E6" stroke="#5F6F52" stroke-width="2"/>
           <text x="45" y="40" font-size="24" text-anchor="middle">📁</text>
-          <text x="45" y="68" font-size="9" fill="#7a3d22" text-anchor="middle" font-weight="700">You choose</text>
-          <text x="45" y="80" font-size="9" fill="#7a3d22" text-anchor="middle" font-weight="700">where to save</text>
+          <text x="45" y="68" font-size="9" fill="#384a2c" text-anchor="middle" font-weight="700">You choose</text>
+          <text x="45" y="80" font-size="9" fill="#384a2c" text-anchor="middle" font-weight="700">where to save</text>
         </g>
-        <path d="M480,75 L530,75" stroke="#c67d52" stroke-width="3" marker-end="url(#arrow2)"/>
+        <path d="M480,75 L530,75" stroke="#5F6F52" stroke-width="3" marker-end="url(#arrow2)"/>
         <!-- Safe -->
         <g transform="translate(545,25)">
           <rect x="0" y="0" width="60" height="90" rx="8" fill="#1a7a4a"/>
@@ -2817,7 +2817,7 @@ a:hover{text-decoration:underline;}
       <div class="diagram-title">Your Simple Backup Schedule</div>
       <svg viewBox="0 0 600 130" xmlns="http://www.w3.org/2000/svg">
         <line x1="40" y1="65" x2="560" y2="65" stroke="#e8e6e1" stroke-width="3"/>
-        <circle cx="80" cy="65" r="10" fill="#c67d52"/>
+        <circle cx="80" cy="65" r="10" fill="#5F6F52"/>
         <text x="80" y="35" font-size="11" text-anchor="middle" fill="#1c1610" font-weight="700">Today</text>
         <text x="80" y="95" font-size="10" text-anchor="middle" fill="#6e6860">First backup</text>
         <text x="80" y="108" font-size="10" text-anchor="middle" fill="#6e6860">right after setup</text>
@@ -2876,23 +2876,23 @@ a:hover{text-decoration:underline;}
           <text x="75" y="80" font-size="9" fill="#908a80" text-anchor="middle">(most browsers save</text>
           <text x="75" y="92" font-size="9" fill="#908a80" text-anchor="middle">here automatically)</text>
         </g>
-        <path d="M185,70 L235,70" stroke="#c67d52" stroke-width="3" marker-end="url(#arrow3)"/>
-        <defs><marker id="arrow3" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#c67d52"/></marker></defs>
+        <path d="M185,70 L235,70" stroke="#5F6F52" stroke-width="3" marker-end="url(#arrow3)"/>
+        <defs><marker id="arrow3" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5F6F52"/></marker></defs>
         <text x="210" y="55" font-size="9" fill="#6e6860" text-anchor="middle">then move it to:</text>
         <g transform="translate(250,20)">
-          <rect x="0" y="0" width="150" height="100" rx="8" fill="#fbf3ec" stroke="#c67d52" stroke-width="2"/>
-          <text x="75" y="22" font-size="11" fill="#7a3d22" text-anchor="middle" font-weight="700">📁 Documents ›</text>
-          <text x="75" y="36" font-size="11" fill="#7a3d22" text-anchor="middle" font-weight="700">Life and Legacy</text>
+          <rect x="0" y="0" width="150" height="100" rx="8" fill="#EEF1E6" stroke="#5F6F52" stroke-width="2"/>
+          <text x="75" y="22" font-size="11" fill="#384a2c" text-anchor="middle" font-weight="700">📁 Documents ›</text>
+          <text x="75" y="36" font-size="11" fill="#384a2c" text-anchor="middle" font-weight="700">Life and Legacy</text>
           <rect x="14" y="48" width="120" height="16" rx="3" fill="#fff"/>
           <text x="20" y="60" font-size="9" fill="#6e6860">life-legacy-backup.json</text>
-          <text x="75" y="84" font-size="9" fill="#8f5030" text-anchor="middle">your permanent home</text>
+          <text x="75" y="84" font-size="9" fill="#4a5d3b" text-anchor="middle">your permanent home</text>
         </g>
-        <path d="M420,70 L470,70" stroke="#c67d52" stroke-width="3" marker-end="url(#arrow3)"/>
+        <path d="M420,70 L470,70" stroke="#5F6F52" stroke-width="3" marker-end="url(#arrow3)"/>
         <text x="445" y="55" font-size="9" fill="#6e6860" text-anchor="middle">+ copy to:</text>
         <g transform="translate(485,20)">
           <rect x="0" y="0" width="100" height="100" rx="8" fill="#1c1610"/>
           <text x="50" y="50" font-size="30" text-anchor="middle">🔌</text>
-          <text x="50" y="80" font-size="9" fill="#d9a17a" text-anchor="middle" font-weight="700">USB Drive</text>
+          <text x="50" y="80" font-size="9" fill="#8B9B7B" text-anchor="middle" font-weight="700">USB Drive</text>
           <text x="50" y="92" font-size="9" fill="#c6b49c" text-anchor="middle">(backup copy)</text>
         </g>
       </svg>
@@ -7460,8 +7460,8 @@ document.addEventListener('visibilitychange', () => {
   if (document.visibilityState === 'hidden') saveData();
 });
 
-console.log('%c🏛️ Life & Legacy Vault - Private Personal Edition', 'color:#c67d52; font-size:16px; font-weight:bold; background:#1c1610; padding:8px 16px; border-radius:4px;');
-console.log('%cAll data stored locally. Use Ctrl+S (Cmd+S on Mac) to export a JSON backup.', 'color:#c6b49c;');
+console.log('%c🏛️ Life & Legacy Vault - Private Personal Edition', 'color:#8B9B7B; font-size:16px; font-weight:bold; background:#3B342A; padding:8px 16px; border-radius:4px;');
+console.log('%cAll data stored locally. Use Ctrl+S (Cmd+S on Mac) to export a JSON backup.', 'color:#6E6353;');
 </script>
 
 <!-- ── PERSISTENT LICENSE WATERMARK ── -->
